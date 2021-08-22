@@ -5168,6 +5168,10 @@ textarea.form-control-lg {
   justify-content: space-evenly !important;
 }
 
+.justify-content-sm-end {
+  justify-content: flex-end !important;
+}
+
 .align-items-start {
   align-items: flex-start !important;
 }

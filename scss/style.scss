@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#backgroundimage{
+    background-image: url(../media/frontpage-image-sm.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+
+    div{
+        section{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+body{
+    background-color: rgb(38, 43, 42);
+}
+
+.containerBody{
+    background-color: #3DCDD7;
+}
+
+.navbarColor{
+    background-color: #1DA8B2;
+}
+
+.mainContent{
+    .row{
+        div{
+            padding: 20px;
+        }
+    }
+}
+
+.tituloPrincipal{
+    display: flex;
+    justify-content: center;
+}
+
+.ulFooter{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    list-style: none;
+    li{
+        margin: 0 15px;
+        img{
+            max-width: 48px;
+        }
+    }
+}
+
+.navbar{
+    li{
+        margin:0 5px;
+
+        &:hover{
+            background: linear-gradient(120deg,rgb(224, 212, 212) 50%, rgb(236, 229, 229) 100%);
+            border-bottom: 2px solid rgb(20, 20, 20) ;
+            border-right: 2px solid rgb(20, 20, 20);
+        }
+
+        a{
+           text-decoration: none;
+           padding: 10px;
+       }
+    }
+}
+
+.cardNosotros{
+    margin: 1rem 0;
+} 
+
+.textAlign{
+    text-align: center;
+}
+
+.logo{
+    max-width: 56px;
+    &:hover{
+        animation-name: animLogo;
+        animation-duration: 1s;
+        animation-delay: 0.25s;
+        animation-timing-function: linear;
+    }
+}
+
+.ulFooter{
+    li{
+        img{
+            &:hover{
+            background-color: rgba(255, 255, 255, 0.61);
+            border-radius: 25%;
+        }
+    }
+    }
+}
+
+p, h1, h2, label, a, small{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+h2 > *{
+    font-weight: inherit;
+}
+
+.startButton{
+    padding: 20px;
+    background-color: #3dcdd79f;
+    border: 1.5px solid rgba(0, 0, 0, 0.664);
+    border-radius: 25%;
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+        background-color: #3dcdd7b6;
+    }
+}
+
+.accordion{
+    width: 100%;
+}
+
+@keyframes animLogo {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}   
+}
+
+@media (min-width: 768px){
+    .ulFooter{
+        justify-content: flex-end;
+    }
+    
+    .galery img:hover{
+        transform: scale(150%);
+        transition-duration: 1s;
+        z-index: 2;
+    }
+
+    .accordion{
+        width: 70%;
+        align-self: center;
+    }
+
+    #backgroundimage{
+        background-image: url(../media/frontpage-image.jpg);
+    }
+}

@@ -77,6 +77,18 @@ p, h1, h2, label, a, small {
 h2 > * {
   font-weight: inherit; }
 
+.fix{
+  width: 80%;
+  margin: 30px auto 40px auto !important;
+}
+.fix-col{
+  padding: 20px 10px 10px 20px !important;
+}
+
+.imgWrap .card img{
+  max-width: 300px;
+}
+
 .startButton {
   padding: 20px;
   background-color: #3dcdd79f;
